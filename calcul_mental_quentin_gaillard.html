@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calcul mental</title>
+        <link rel="stylesheet" href="https://cdn.metroui.org.ua/current/metro.css">
+    </head>
+    <body>
+        <h1>Calcul mental</h1>
+        <p>calculez la somme des nombres et saisissez dans le champ la réponse</p>
+        <div class="cell-5">
+        <div id="from-group">
+            <input type="text" data-role="input" data-prepend="nombre A :" id="nombreA" value="15" readonly>
+        </div>
+        <div class="from-group">+</div>
+        <div id="from-group">
+            <input type="text" data-role="input" data-prepend="nombre B :" id="nombreB" values="15" readonly>
+        </div>
+        <div class="from-group">=</div>
+            <div class="from-group d-flex flex-row gap-2">
+                <input type="text" id="reponse">
+            <input class="button" type="button" id="repondre" value="repondre" onclick="repondre()">
+            </div>
+            <input type="text" id="relancer">
+                <input class="button" type="button" id="relancer" value="relancer" onclick="init()">
+            </div>
+        </div>     
+        <div class="from-group">
+            <div id="preussite">Réussite</div>
+            <div data-role="progress" id="progression" data-type="buffer" data-value="0" data-buffer="0"></div>
+        </div>  
+        <script scr="https://cnd.metroui.org.ua/current/metro.js"></script>
+        <script src="js/calcul.js"></script>
+    </body>
+</html>
